@@ -1,0 +1,40 @@
+ 
+ 
+ displayCustomerId,
+firstName,
+ lastName,
+ dob,
+ gender,
+ mobileNo,
+ emailId,
+ address,
+ district,
+ state,
+ country,
+ pinCode,
+
+setDisplayCustomerId] = useState("")
+ setFirstName] = useState("")
+ setLastNamed] = useState("")
+ setDob] = useState("")
+  setGender] = useState("")
+setMobileNo] = useState("")
+setEmailId] = useState("")
+setAddress] = useState("")
+setState] = useState("")
+ setCountry] = useState("")
+setPinCode] = useState("")
+
+
+display_customer_id
+first_name 
+last_name 
+dob 
+gender 
+mobile_no
+email_id 
+address
+district 
+state 
+country 
+pin_code 

@@ -1,0 +1,85 @@
+    <BrowserRouter>
+          <Routes>
+              <Route></Route>
+              <Route exact path="/CreateCustomer" element={<CreateCustomer/>} />
+              <Route exact path="/readCustomer" element={<ReadCustomer/>} />
+              <Route exact path="/updateCustomer" element={<UpdateCustomer/>} />
+          </Routes>
+    </BrowserRouter>
+
+
+	private String displayOrderId;
+	private String customerName;
+	private String productName;
+	private String mobileNo;
+	private String modelNo;
+	private String brandName;
+	private String ProductColor;
+	private String category;
+	private String subCategory;
+	private String discription;
+	private String orderDate;
+	private String expectedDeliveryDate;
+	private String logisticName;
+	private String awbNo;
+	private String couponCode;
+
+
+	<div style={{margin:"5rem"}} >
+        <div style={{position:"fixed", left:0, right:0, bottom:0,top:'50px',background:"#A9A9A9"}} 
+        onClick={closeModal}></div>
+        <div style={modalContainer}>
+
+            </div>
+            <h3>Place Order </h3>
+            <Form onSubmit={(e) => sumitHandler(e)}>
+                <Form.Group className="mb-3" >
+                    <Form.Label>mobileNo</Form.Label>
+                    <Form.Control type="text" placeholder="10-digit" name="mobileNo" value={mobileNo} onChange={(e) => onInputChange(e)} />
+                </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>productName</Form.Label>
+                    <Form.Control type="text" name="productName" value={productName} onChange={(e) => onInputChange(e)} />
+                </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>couponCode</Form.Label>
+                    <Form.Control type="text" name="couponCode" value={couponCode} onChange={(e) => onInputChange(e)} />
+                </Form.Group>
+            
+            </Form>
+            <label className="col-md-6 control-label"></label>
+                <div className="col-md-10">
+                    <Button type="submit"  >Send </Button>
+                    <Button  variant="primary"onClick={closeModal}>Accept it</Button>
+                </div>
+
+
+import { React } from 'react';
+import './App.css'
+import { Routes, Route } from "react-router-dom";
+import MyNavbar from './omsOrderComponent/MyNavbar';
+import Test from './test/Test';
+import Test2 from './test/Test2';
+import Creat from './test/Creat'; 
+ import ReadOrderDetails from'./omsOrderComponent/ReadOrderDetails'
+ import PlaceOd from'./omsOrderComponent/PlaceOd'
+ //import GridExample from'./agGridTable/GridExample'
+
+function App() {
+  return (
+    <div style={{background:"white"}} >
+      <MyNavbar/>
+      {/* <GridExample /> */}
+      <Routes>
+        <Route></Route>
+        <Route exact path="/" element={<ReadOrderDetails />} />
+        <Route exact path="/placeod" element={<PlaceOd />} />
+        <Route exact path="/t" element={<Test />} />
+        <Route exact path="/c" element={<Creat />} />
+        <Route exact path="/t2" element={<Test2 />} />
+      </Routes>
+    </div>
+  );
+}
+export default App;
+

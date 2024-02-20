@@ -1,0 +1,35 @@
+  long pkEmpId;
+String emailId;
+ String passwd;
+
+   pkEmpId, setPkEmpId
+    const[emailId, setEmailId] 
+    const[passwd, setPasswd] 
+
+
+
+    import 'bootstrap/dist/css/bootstrap.min.css';
+    import React from 'react';
+    
+    import Modal from './modal/Modal'
+    // import { BrowserRouter,Routes ,Route} from "react-router-dom";
+    // import CreateEmployee from './employee/CreateEmployee'
+    // import RetriveEmployee from './employee/RetriveEmployee'
+    // import EditEmployee from './employee/EditEmployee'
+    
+    
+    
+    function App() {
+        return (
+          <div className="App">
+          {/* <BrowserRouter>
+                <Routes>
+                    <Route exact path="/addempl" element={<CreateEmployee/>} />
+                    <Route exact path="/readempl" element={<RetriveEmployee/>} />
+                    <Route exact path="/editemployee/:id" element={<EditEmployee/>} />
+                </Routes>
+          </BrowserRouter> */}
+          <Modal/>
+          </div>
+        );
+      }

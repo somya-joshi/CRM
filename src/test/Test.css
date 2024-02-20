@@ -1,0 +1,13 @@
+
+.container{	background: #FFF;
+	width:500px;
+	height: 400px;
+	margin: 250px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.orderheading{height:50px; background:#1873CC}
+
+.inputStyle{margin-left:30px ; margin-right:30px}
+.buttondiv{margin-top:30px; margin-left:50px}
+

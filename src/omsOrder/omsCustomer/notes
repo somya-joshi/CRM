@@ -1,0 +1,32 @@
+
+get customer by mob no
+{
+    "displayCustomerId": "CUS_1004",
+    "firstName": "somya",
+    "lastName": "joshi",
+    "dob": "10-Oct-2023",
+    "gender": "Female",
+    "mobileNo": "8999352669",
+    "emailId": "somya@gmail.com",
+    "address": "Flat No-665A, magerpatta",
+    "district": "pune",
+    "state": "Maharashtra",
+    "country": "india",
+    "pinCode": 4212002
+}
+
+
+create
+{
+    "firstName": "rahul",
+    "lastName": "khan",
+    "dob": "10-Oct-2023",
+    "gender": "Female",
+    "mobileNo": "8999352661",
+    "emailId": "rahul@gmail.com",
+    "address": "Flat No-665A, magerpatta",
+    "district": "pune",
+    "state": "Maharashtra",
+    "country": "india",
+    "pinCode": 4212002
+}
