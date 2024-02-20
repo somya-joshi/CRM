@@ -15,6 +15,7 @@ import UpdateCustomer from './omsOrder/omsCustomer/UpdateCustomer';
 function App() {
   return (
     <div style={{ background: "white" }} >
+      <h1>hello shailesh</h1>
       <MyNavbar />
       <Routes>
         <Route exact path="/order" element={<ReadOrderList />} />
